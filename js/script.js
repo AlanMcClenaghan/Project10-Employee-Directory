@@ -18,9 +18,9 @@
             let postcode = employee.location.postcode;
             let address = street + ', ' + city + ',<br> ' + state + ', ' + ' UK, ' + postcode
             let cell = employee.cell;
-            let birthYear = employee.dob.slice(2,4);
-            let birthMonth = employee.dob.slice(5,7);
-            let birthDay = employee.dob.slice(8,10)
+            let birthYear = employee.dob.date.slice(2,4);
+            let birthMonth = employee.dob.date.slice(5,7);
+            let birthDay = employee.dob.date.slice(8,10)
             let birthday = birthDay + '/' + birthMonth +  '/' + birthYear;
             
             
